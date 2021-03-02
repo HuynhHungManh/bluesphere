@@ -4,17 +4,17 @@ import StageHeader from "./StageHeader";
 function Home() {
 
   return (
-		<div className="home-page">
+		<>
 			<div className="price-box">
 		    <div className="row">
 		      <h2 className="text-primary font-weight-bold kimochi-box"><small className="text-white custom">BSCYield Price: </small><span className="price-text">$1.43<span /></span></h2>
 		    </div>
 		    <div className="row">
 		      <h4 className="text-primary font-weight-bold btn-kimochi-box">
-		        <a className="mr-2" target="_blank" href="https://exchange.pancakeswap.finance/?_gl=1*gg5zmn*_ga*MTA2OTUzMzA2Ni4xNjEzMzg4ODc3*_ga_334KNG3DMQ*MTYxMzgzMjYxOS4xNi4xLjE2MTM4MzI3NDcuMA..#/swap?inputCurrency=0x4da95bd392811897cde899d25face253a424bfd4&outputCurrency=0xe9e7cea3dedca5984780bafc599bd69add087d56">
+		        <a className="mr-2" target="_blank" rel="noreferrer" href="https://exchange.pancakeswap.finance/?_gl=1*gg5zmn*_ga*MTA2OTUzMzA2Ni4xNjEzMzg4ODc3*_ga_334KNG3DMQ*MTYxMzgzMjYxOS4xNi4xLjE2MTM4MzI3NDcuMA..#/swap?inputCurrency=0x4da95bd392811897cde899d25face253a424bfd4&outputCurrency=0xe9e7cea3dedca5984780bafc599bd69add087d56">
 		          <button className="btn btn-danger btn-kimochi">Buy BSCY with BUSD</button>
 		        </a>
-		        <a target="_blank" href="https://exchange.pancakeswap.finance/?_gl=1*gg5zmn*_ga*MTA2OTUzMzA2Ni4xNjEzMzg4ODc3*_ga_334KNG3DMQ*MTYxMzgzMjYxOS4xNi4xLjE2MTM4MzI3NDcuMA..#/swap?inputCurrency=0x4da95bd392811897cde899d25face253a424bfd4&outputCurrency=0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c">
+		        <a target="_blank"  rel="noreferrer"href="https://exchange.pancakeswap.finance/?_gl=1*gg5zmn*_ga*MTA2OTUzMzA2Ni4xNjEzMzg4ODc3*_ga_334KNG3DMQ*MTYxMzgzMjYxOS4xNi4xLjE2MTM4MzI3NDcuMA..#/swap?inputCurrency=0x4da95bd392811897cde899d25face253a424bfd4&outputCurrency=0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c">
 		          <button className="btn btn-danger btn-kimochi">Buy BSCY with WBNB</button>
 		        </a>
 		      </h4>
@@ -49,7 +49,7 @@ function Home() {
 		    </div>
 		  </div>
       <StageHeader/>
-		</div>
+		</>
   );
 }
 

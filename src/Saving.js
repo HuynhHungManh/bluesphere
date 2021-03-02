@@ -1,6 +1,15 @@
 import React from "react";
+import $ from "jquery";
 
-function Saving() {
+function Saving({ match, history }) {
+
+  const path = history.location.pathname;
+
+  if (path === '/saving') {
+    $("#backgroundStack").addClass("saving-height");
+    $("#backgroundStack-solidColor").addClass("saving-height");
+    $("#backgroundStack-gradient").addClass("saving-height");
+  }
 
   return (
     <div className="saving-block">
@@ -21,7 +30,7 @@ function Saving() {
                   <div className="col-lg-6 col-md-6 col-sm-12 mb-3">
                     <div className="h-100 card">
                       <div className="card-header">
-                        <h5>KIMOCHI amount</h5>
+                        <h5>BSCY amount</h5>
                       </div>
                       <div className="card-body">
                         <div className="h2 font-weight-bold text-mono">-.----------</div>
@@ -40,11 +49,11 @@ function Saving() {
                                 <td>
                                   <strong>1) Saving: </strong>
                                 </td>
-                                <td>-.--- KIMOCHI</td>
+                                <td>-.--- BSCY</td>
                               </tr>
                               <tr>
                                 <td><strong>2) Reward: </strong></td>
-                                <td>-.--- KIMOCHI</td>
+                                <td>-.--- BSCY</td>
                               </tr>
                               <tr>
                                 <td><strong>3) Start day: </strong></td>
@@ -70,7 +79,7 @@ function Saving() {
                     <div>
                       <div className="mb-3 input-group">
                         <input placeholder={0} type="number" className="text-center form-control" />
-                        <div className="input-group-append"><span className="input-group-text">KIMOCHI</span><button className="main-btn">MAX</button></div>
+                        <div className="input-group-append"><span className="input-group-text">BSCY</span><button className="main-btn">MAX</button></div>
                       </div>
                     </div>
                     <div className="mt-3">
@@ -92,9 +101,9 @@ function Saving() {
                         </div>
                       </div>
                     </div>
-                    <div className="mt-3">After <span className="font-weight-bold text-success">30days</span> you will able to claim <span className="font-weight-bold text-success">-.- KIMOCHI</span> || <span className="font-weight-bold text-success">NaN%</span> ROI</div>
+                    <div className="mt-3">After <span className="font-weight-bold text-success">30days</span> you will able to claim <span className="font-weight-bold text-success">-.- BSCY</span> || <span className="font-weight-bold text-success">NaN%</span> ROI</div>
                   </div>
-                  <div className="text-center card-footer"><button className="main-btn" disabled>Saving for -.- KIMOCHI</button></div>
+                  <div className="text-center card-footer"><button className="main-btn" disabled>Saving for -.- BSCY</button></div>
                 </div>
               </div>
             </div>

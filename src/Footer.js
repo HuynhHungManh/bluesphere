@@ -7,7 +7,7 @@ function Footer() {
       <div className="container container-footer">
         <ul className="row list-unstyled ul-text-box">
           <li className="text-box">
-            <a href="#!" className="text-white" target="_blank">Kimochi Contract</a>
+            <a href="#!" className="text-white" target="_blank">BSCYield Contract</a>
           </li>
           <li className="text-box">
             <a href="#!" className="text-white" target="_blank">Documents</a>

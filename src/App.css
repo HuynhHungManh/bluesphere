@@ -200,6 +200,22 @@ button:disabled {
 .saving-mobile {
 	display: none;
 }
+.mobile {
+  display: none;
+}
+.stage-header {
+    width: 100%;
+    white-space: nowrap;
+    position: absolute;
+    top: 30%;
+    left: 40px;
+    text-transform: uppercase;
+    z-index: 1000;
+}
+.navbar-toggler {
+  background-color: #f8f9fa36;
+}
+
 @media only screen and (max-width: 1230px) {
 	.nav-item .nav-link {
 		padding: 15px 20px !important;
@@ -210,10 +226,14 @@ button:disabled {
 	}
 }
 @media only screen and (max-width: 991px) {
+  .mobile {
+    display: block;
+    width: 120px;
+  }
 	.price-box {
 		width: 100%;
 		right: unset;
-		top: 50%;
+		top: 45%;
 	}
 	.btn-kimochi-box {
 		margin: auto;
@@ -231,10 +251,10 @@ button:disabled {
 	}
 	.saving-block {
 		bottom: unset !important;
-		top: 85px;
-		/* height: 720px; */
-		/* overflow: scroll;
-		overflow-x: hidden; */
+		top: 4%;
+		height: 720px;
+		overflow: scroll;
+		overflow-x: hidden;
 	}
 	footer .ul-text-box .text-box {
 		padding: 5px 7px;
@@ -253,15 +273,19 @@ button:disabled {
 	.desktop {
 		display: none;
 	}
+  .saving-height {
+    height: 1275px;
+  }
 }
 @media only screen and (max-width: 767px) {
 	.btn-kimochi {
 		display: block !important;
 		margin: auto !important;
-		/* margin-bottom: 14px !important; */
 	}
 	.saving-block {
 		height: 670px;
+    overflow: unset;
+    overflow-x: unset;
 	}
   .row-balance {
     margin-top: 10px;
@@ -329,7 +353,7 @@ button:disabled {
 		line-height: 30px;
 	}
 	.price-box {
-		top: 10% !important;
+		top: 12% !important;
 	}
 	.home-card {
 		padding: 10px 0;
@@ -346,12 +370,4 @@ button:disabled {
 	.btn-kimochi-box {
 		margin-bottom: 4%;
 	}
-}
-.stage-header {
-    width: 100%;
-    white-space: nowrap;
-    position: absolute;
-    top: 30%;
-    left: 40px;
-    text-transform: uppercase;
 }

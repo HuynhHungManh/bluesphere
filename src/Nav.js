@@ -1,11 +1,11 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 import classNames from "classnames/bind";
 
 function Nav() {
   const pathname = window.location.pathname;
 
   const checkAcitve = (path, pathCurrent) => {
-    if (path == pathCurrent) {
+    if (path === pathCurrent) {
       return true;
     }
 
@@ -26,22 +26,22 @@ function Nav() {
             <a className="nav-link" href="/">HOME</a>
 					</li>
 					<li className="nav-item">
-						<a className="nav-link" href="#">FARMING-V2 <span className="soon-box">soon</span></a>
+						<a className="nav-link" href="/">FARMING-V2 <span className="soon-box">soon</span></a>
 					</li>
 					<li className={classNames('nav-item', { active: checkAcitve('/saving', pathname) })}>
             <a className="nav-link" href="/saving">SAVING<span className="soon-box">soon</span></a>
 					</li>
 					<li className="nav-item">
-						<a className="nav-link" href="#">NFT <span className="soon-box">soon</span></a>
+						<a className="nav-link" href="/">NFT <span className="soon-box">soon</span></a>
 					</li>
 					<li className="nav-item">
-						<a className="nav-link" href="#">BSCYSWAP<span className="soon-box">soon</span></a>
+						<a className="nav-link" href="/">BSCYSWAP<span className="soon-box">soon</span></a>
 					</li>
 					<li className="nav-item">
-						<a className="nav-link" href="#" target="_blank">DOCS</a>
+						<a className="nav-link" href="/" target="_blank">DOCS</a>
 					</li>
 					<li className="nav-item">
-						<a className="nav-link" href="#" target="_blank">Buy BSCYield</a>
+						<a className="nav-link" href="/" target="_blank">Buy BSCYield</a>
 					</li>
 					<li className="nav-item">
 						<button type="button" className="btn btn-unlock">Unlock Wallet</button>

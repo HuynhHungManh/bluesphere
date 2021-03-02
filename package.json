@@ -2,6 +2,7 @@
   "name": "kontent-tutorial-react-js",
   "version": "0.3.0",
   "private": true,
+  "homepage": "./",
   "dependencies": {
     "@kentico/kontent-delivery": "^10.1.0",
     "@testing-library/jest-dom": "^5.11.6",
