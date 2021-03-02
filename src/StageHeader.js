@@ -1,7 +1,7 @@
-import React, {useState, useEffect} from "react";
-import {Link} from "react-router-dom";
+import React from "react";
 
 function StageHeader() {
+
   return (
 		<div className="stage-header">
       <h1>BSC Yield</h1>

@@ -1,83 +1,53 @@
-<!doctype html>
-<html class="no-js" lang="en">
-   <!-- Mirrored from demos.boomapps.eu/wiresphere/bluesphere/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 22 Feb 2021 03:24:01 GMT -->
-   <head>
-      <meta charset="utf-8">
-      <meta http-equiv="x-ua-compatible" content="ie=edge">
-      <title>BSC Yield Finance - Binance Smart Chain</title>
-      <meta name="description" content="">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-      <link rel="apple-touch-icon" href="apple-touch-icon.png">
-      <link rel="shortcut icon" href="favicon.ico">
-      <link rel="stylesheet" type="text/css" href="_assets/wiresphere.concat.min.css">
-      <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:400,300,700,900,100">
-   </head>
-   <body>
-      <div class="preloader" id="preloader">
-         <svg style="" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 257.7 223.2" xml:space="preserve">
-            <g stroke-width="6">
-               <polygon class="st0" points="69.6,214.2 10.4,111.6 69.6,9 188.1,9 247.3,111.6 188.1,214.2 "/>
-               <line class="st0" x1="69.6" y1="9" x2="188.1" y2="214.2"/>
-               <line class="st0" x1="69.6" y1="214.2" x2="188.1" y2="9"/>
-               <line class="st0" x1="10.4" y1="111.6" x2="247.3" y2="111.6"/>
-            </g>
-         </svg>
-      </div>
-
-      <!-- Content -->
-      <div class="stage">
-         <div class="backgroundStack" id="backgroundStack">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <meta charset="utf-8">
+     <meta http-equiv="x-ua-compatible" content="ie=edge">
+     <title>BSC Yield Finance - Binance Smart Chain</title>
+     <meta name="description" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     <link rel="apple-touch-icon" href="apple-touch-icon.png">
+     <link rel="shortcut icon" href="favicon.ico">
+     <link rel="stylesheet" type="text/css" href="_assets/wiresphere.concat.min.css">
+     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:400,300,700,900,100">
+  </head>
+  <body>
+    <div class="preloader" id="preloader">
+       <svg style="" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 257.7 223.2" xml:space="preserve">
+          <g stroke-width="6">
+             <polygon class="st0" points="69.6,214.2 10.4,111.6 69.6,9 188.1,9 247.3,111.6 188.1,214.2 "/>
+             <line class="st0" x1="69.6" y1="9" x2="188.1" y2="214.2"/>
+             <line class="st0" x1="69.6" y1="214.2" x2="188.1" y2="9"/>
+             <line class="st0" x1="10.4" y1="111.6" x2="247.3" y2="111.6"/>
+          </g>
+       </svg>
+    </div>
+    <div class="stage">
+       <div class="backgroundStack" id="backgroundStack">
+          <div class="backgroundStack-solidColor" id="backgroundStack-solidColor">
             <div id="root"></div>
-            <div class="backgroundStack-solidColor" id="backgroundStack-solidColor"></div>
-            <div class="backgroundStack-pic" id="backgroundStack-pic"></div>
-            <canvas class="backgroundStack-gradient" id="backgroundStack-gradient"></canvas>
-            <div class="backgroundStack-3d" id="backgroundStack-3d"></div>
-            <div class="backgroundStack-noise" id="backgroundStack-noise"></div>
-         </div>
-         <img src="_pics/logo.png" width="150px" alt="Wiresphere" class="stage-logo mobile" />
-         <div class="stage-header">
-            <h1>BSC Yield</h1>
-            <h2 id="stage-header-tagline">
-               <span>Binance Smart Chain</span>
-               <span>Non-fungible token</span>
-               <span>Farming V-2</span>
-               <span>Pancake Swap</span>
-               <span>Multiple Wallet</span>
-            </h2>
-         </div>
-      </div>
-      <!-- Content -->
-      <script src="_assets/jquery-2.2.4.min.js"></script>
-      <script src="https://maps.googleapis.com/maps/api/js"></script>
-      <script src="config.js"></script>
-      <script src="_assets/wiresphere.concat.min.js"></script>
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-   </body>
-   <!-- Footer -->
-   <footer class="text-center text-lg-start">
-      <div class="container container-footer">
-         <ul class="row list-unstyled ul-text-box">
-            <li class="text-box">
-               <a href="#!" class="text-white" target="_blank">BSCYield Contract</a>
-            </li>
-            <li class="text-box">
-               <a href="#!" class="text-white" target="_blank">Documents</a>
-            </li>
-            <li class="text-box">
-               <a href="#!" class="text-white" target="_blank">Telegram Chat</a>
-            </li>
-            <li class="text-box">
-               <a href="#!" class="text-white" target="_blank">Telegram Channel</a>
-            </li>
-            <li class="text-box">
-               <a href="https://twitter.com/Bscyield1" class="text-white" target="_blank">Twitter</a>
-            </li>
-         </ul>
-      </div>
-   </footer>
-   <!-- Footer -->
-   <!-- Mirrored from demos.boomapps.eu/wiresphere/bluesphere/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 22 Feb 2021 03:24:05 GMT -->
+            <canvas class="backgroundStack-gradient" id="backgroundStack-gradient" width="500px" height="500px"></canvas>
+          </div>
+          <div class="backgroundStack-pic" id="backgroundStack-pic"></div>
+          <div class="backgroundStack-3d" id="backgroundStack-3d"></div>
+          <div class="backgroundStack-noise" id="backgroundStack-noise"></div>
+       </div>
+    </div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    <script src="_assets/jquery-2.2.4.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="config.js"></script>
+    <script src="_assets/wiresphere.concat.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
 </html>

@@ -1,11 +1,10 @@
-import React, {useState, useEffect} from "react";
-import {Link} from "react-router-dom";
+import React from "react";
 import StageHeader from "./StageHeader";
 
 function Home() {
 
   return (
-		<>
+		<div className="home-page">
 			<div className="price-box">
 		    <div className="row">
 		      <h2 className="text-primary font-weight-bold kimochi-box"><small className="text-white custom">BSCYield Price: </small><span className="price-text">$1.43<span /></span></h2>
@@ -20,7 +19,7 @@ function Home() {
 		        </a>
 		      </h4>
 		    </div>
-		    <div className="row">
+		    <div className="row row-balance">
 		      <div className="col-lg-6 col-md-6 col-sm-12 mb-3 child-balance">
 		        <div className="home-card card">
 		          <div className="card-body">
@@ -49,7 +48,8 @@ function Home() {
 		      </div>
 		    </div>
 		  </div>
-		</>
+      <StageHeader/>
+		</div>
   );
 }
 
