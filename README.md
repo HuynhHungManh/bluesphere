@@ -18,6 +18,8 @@ This project is using the [Kentico Kontent JavaScript Delivery SDK](https://gith
 
 ## Available Scripts
 
+Use node v12
+
 ### `npm install`
 
 Installs all the requiered dependencies.

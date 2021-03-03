@@ -15,7 +15,7 @@ function App() {
         <div>
           {/* This line specifies that if the browser URL matches /,
           the ArticleListing component should be rendered in this place. */}
-          <Route path='/' component={Home} />
+          <Route exact path='/' component={Home} />
           <Route path='/saving' component={Saving} />
         </div>
       </Router>

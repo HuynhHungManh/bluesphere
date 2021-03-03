@@ -275,6 +275,7 @@ button:disabled {
 	}
   .saving-height {
     height: 1275px;
+    width: 100%;
   }
 }
 @media only screen and (max-width: 767px) {

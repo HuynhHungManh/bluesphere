@@ -17,10 +17,11 @@ function Nav() {
 			<button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span className="navbar-toggler-icon" />
 			</button>
+      <img src="_pics/logo.png" width="120px" alt="Wiresphere" className="mobile" />
 			<div className="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul className="navbar-nav mr-auto">
 					<li className="nav-item desktop">
-						<img src="_pics/logo.png" width="150px" alt="Wiresphere" className="stage-logo" />
+						<img src="_pics/logo.png" width="150px" alt="Wiresphere" />
 					</li>
 					<li className={classNames('nav-item', { active: checkAcitve('/', pathname) })}>
             <a className="nav-link" href="/">HOME</a>
